@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Misc on 0x3EB</title>
+    <link>https://0x3eb.github.com/tags/misc/</link>
+    <description>Recent content in Misc on 0x3EB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://0x3eb.github.com/tags/misc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Amazing Song Lyrics</title>
+      <link>https://0x3eb.github.com/posts/amazing-song-lyrics/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/amazing-song-lyrics/</guid>
+      <description>DescriptionLink to headingThis is a wierd png file. I hope you can make some sense out of it!
+Attachement :
+SolvingLink to headingWe just have to look for the defintion of each sign
+ResultLink to headingn00bz{americansignlanguagedecoded} </description>
+    </item>
+    
+    <item>
+      <title>Big Blacklist</title>
+      <link>https://0x3eb.github.com/posts/big-blacklist/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/big-blacklist/</guid>
+      <description>DescriptionLink to headingThat&amp;rsquo;s a big blacklist for a pyjail challenge, don&amp;rsquo;t you think? Author: NoobMaster
+nc challs.n00bzunit3d.xyz 8412 SolvingLink to headingOnce connected on the server, we can find the code of the PyJail.
+blacklist = [&amp;#34;/&amp;#34;,&amp;#34;0&amp;#34;,&amp;#34;1&amp;#34;,&amp;#34;2&amp;#34;,&amp;#34;3&amp;#34;,&amp;#34;4&amp;#34;,&amp;#34;5&amp;#34;,&amp;#34;6&amp;#34;,&amp;#34;7&amp;#34;,&amp;#34;8&amp;#34;,&amp;#34;9&amp;#34;,&amp;#34;setattr&amp;#34;,&amp;#34;compile&amp;#34;,&amp;#34;globals&amp;#34;, \ &amp;#34;os&amp;#34;,&amp;#34;import&amp;#34;,&amp;#34;_&amp;#34;,&amp;#34;breakpoint&amp;#34;,&amp;#34;exit&amp;#34;,&amp;#34;lambda&amp;#34;,&amp;#34;eval&amp;#34;,&amp;#34;exec&amp;#34;,&amp;#34;read&amp;#34;,&amp;#34;print&amp;#34;, \ &amp;#34;open&amp;#34;,&amp;#34;&amp;#39;&amp;#34;,&amp;#34;=&amp;#34;,&amp;#39;&amp;#34;&amp;#39;,&amp;#34;x&amp;#34;,&amp;#34;builtins&amp;#34;,&amp;#34;clear&amp;#34;] print(&amp;#34;=&amp;#34;*25) print(open(__file__).read()) print(&amp;#34;=&amp;#34;*25) print(&amp;#34;Welcome to the jail!&amp;#34;) print(&amp;#34;=&amp;#34;*25) for i in range(2): x = input(&amp;#39;Enter command: &amp;#39;) for c in blacklist: if c in x: print(&amp;#34;Blacklisted word found!</description>
+    </item>
+    
+    <item>
+      <title>Google Form 1</title>
+      <link>https://0x3eb.github.com/posts/google-form-1/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/google-form-1/</guid>
+      <description>DesciptionLink to headingBinary Flag Checkers are old, so how about some Google Forms Flag Checker?
+Attachement :
+https://forms.gle/bMDsajnZusN4XvNa6
+SolvingLink to headingOn the form page, we just have to inspect the page and find the flag.
+n00bz{1n5p3ct_3l3m3n7_ftw!} </description>
+    </item>
+    
+    <item>
+      <title>My Chemical Romance</title>
+      <link>https://0x3eb.github.com/posts/my-chemical-romance/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/my-chemical-romance/</guid>
+      <description>DescriptionLink to headingMy friend loves Chemistry very much specially the elements. Once I asked him the wifi password he gave me some numbers like 186808155710 and told me that the number are in group of two like 1008 -&amp;gt; 10 and 08/8. Can you help to gather the wifi password? (Note: It forms a complete word, so you might have to leave out something).
+Flag format: n00bz{the_password_in_lower_case}</description>
+    </item>
+    
+    <item>
+      <title>Numbers</title>
+      <link>https://0x3eb.github.com/posts/numbers/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/numbers/</guid>
+      <description>DescriptionLink to headingWelcome to numbers! just answer my few questions to get the flag!
+SolvingLink to headingThe goal of this challenge is to find how many times the first number is in the second one. E.g : &amp;ldquo;How many 3&amp;rsquo;s appear till 40?&amp;rdquo; The answer - 14 because [&amp;lsquo;3&amp;rsquo;,&amp;lsquo;13&amp;rsquo;,&amp;lsquo;23&amp;rsquo;,&amp;lsquo;30&amp;rsquo;,&amp;lsquo;31&amp;rsquo;,&amp;lsquo;32&amp;rsquo;,&amp;lsquo;33&amp;rsquo;,&amp;lsquo;33&amp;rsquo;,&amp;lsquo;34&amp;rsquo;,&amp;lsquo;35&amp;rsquo;,&amp;lsquo;36&amp;rsquo;,&amp;lsquo;37&amp;rsquo;,&amp;lsquo;38&amp;rsquo;,&amp;lsquo;39&amp;rsquo;].
+We just have iterate and count how many times we found the first number.
+from pwn import * conn = remote(&amp;#39;challs.</description>
+    </item>
+    
+  </channel>
+</rss>

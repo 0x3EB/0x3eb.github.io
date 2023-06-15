@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  AES-1 · 0x3EB
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="0x3EB">
+<meta name="description" content="DescriptionLink to headingMy cousin-sister messaged me on Instagram that she has got some text FOqxc90aMQZydCQb2MUm5tj4kRIxxVeCDWzAANfOrr8JItHYneUHhSV0awvQIo/8E1LtfYm/&#43;VVWz0PDK6MXp38BWHoFDorhdS44DzYj9CQ= and a text file in which something like String password: aesiseasy and Salt: saltval was writt,en can you help her to decode the weird text?
+Attachement :
+import javax.crypto.Cipher; import javax.crypto.SecretKey; import javax.crypto.SecretKeyFactory; import javax.crypto.spec.PBEKeySpec; import javax.crypto.spec.SecretKeySpec; import java.nio.charset.StandardCharsets; import java.security.spec.KeySpec; import java.util.Base64; public class AESChallenge { private static final String AES_ALGORITHM = &#34;AES&#34;; private static final String PBKDF2_ALGORITHM = &#34;PBKDF2WithHmacSHA256&#34;; private static final int ITERATIONS = 10000; private static final int KEY_SIZE = 256; private static SecretKey generateKey(String password, byte[] salt) throws Exception { KeySpec spec = new PBEKeySpec(password.">
+<meta name="keywords" content="blog,cybersecurity,pentest,ctf">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="AES-1"/>
+<meta name="twitter:description" content="DescriptionLink to headingMy cousin-sister messaged me on Instagram that she has got some text FOqxc90aMQZydCQb2MUm5tj4kRIxxVeCDWzAANfOrr8JItHYneUHhSV0awvQIo/8E1LtfYm/&#43;VVWz0PDK6MXp38BWHoFDorhdS44DzYj9CQ= and a text file in which something like String password: aesiseasy and Salt: saltval was writt,en can you help her to decode the weird text?
+Attachement :
+import javax.crypto.Cipher; import javax.crypto.SecretKey; import javax.crypto.SecretKeyFactory; import javax.crypto.spec.PBEKeySpec; import javax.crypto.spec.SecretKeySpec; import java.nio.charset.StandardCharsets; import java.security.spec.KeySpec; import java.util.Base64; public class AESChallenge { private static final String AES_ALGORITHM = &#34;AES&#34;; private static final String PBKDF2_ALGORITHM = &#34;PBKDF2WithHmacSHA256&#34;; private static final int ITERATIONS = 10000; private static final int KEY_SIZE = 256; private static SecretKey generateKey(String password, byte[] salt) throws Exception { KeySpec spec = new PBEKeySpec(password."/>
+
+<meta property="og:title" content="AES-1" />
+<meta property="og:description" content="DescriptionLink to headingMy cousin-sister messaged me on Instagram that she has got some text FOqxc90aMQZydCQb2MUm5tj4kRIxxVeCDWzAANfOrr8JItHYneUHhSV0awvQIo/8E1LtfYm/&#43;VVWz0PDK6MXp38BWHoFDorhdS44DzYj9CQ= and a text file in which something like String password: aesiseasy and Salt: saltval was writt,en can you help her to decode the weird text?
+Attachement :
+import javax.crypto.Cipher; import javax.crypto.SecretKey; import javax.crypto.SecretKeyFactory; import javax.crypto.spec.PBEKeySpec; import javax.crypto.spec.SecretKeySpec; import java.nio.charset.StandardCharsets; import java.security.spec.KeySpec; import java.util.Base64; public class AESChallenge { private static final String AES_ALGORITHM = &#34;AES&#34;; private static final String PBKDF2_ALGORITHM = &#34;PBKDF2WithHmacSHA256&#34;; private static final int ITERATIONS = 10000; private static final int KEY_SIZE = 256; private static SecretKey generateKey(String password, byte[] salt) throws Exception { KeySpec spec = new PBEKeySpec(password." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://0x3eb.github.com/posts/aes-1/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-06-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-06-15T00:00:00+00:00" />
+
+
+
+
+<link rel="canonical" href="https://0x3eb.github.com/posts/aes-1/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.5adbe72fc41dcfb852215b84695288939b6b606db73238bd3ee936469572fc9c.css" integrity="sha256-WtvnL8Qdz7hSIVuEaVKIk5trYG23Mji9Puk2RpVy/Jw=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      0x3EB
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Writeups</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://0x3eb.github.com/posts/aes-1/">
+              AES-1
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-06-15T00:00:00Z">
+                June 15, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              3-minute read
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/n00bzctf2023/">n00bzCTF2023</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/crypto/">Crypto</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/java/">Java</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/aes/">AES</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h2 id="description">
+  Description
+  <a class="heading-link" href="#description">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>My cousin-sister messaged me on Instagram that she has got some text <code>FOqxc90aMQZydCQb2MUm5tj4kRIxxVeCDWzAANfOrr8JItHYneUHhSV0awvQIo/8E1LtfYm/+VVWz0PDK6MXp38BWHoFDorhdS44DzYj9CQ=</code> and a text file in which something like String password: aesiseasy and Salt: saltval was writt,en can you help her to decode the weird text?</p>
+<p>Attachement :</p>
+<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#ff7b72">import</span> <span style="color:#ff7b72">javax.crypto.Cipher</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">import</span> <span style="color:#ff7b72">javax.crypto.SecretKey</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">import</span> <span style="color:#ff7b72">javax.crypto.SecretKeyFactory</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">import</span> <span style="color:#ff7b72">javax.crypto.spec.PBEKeySpec</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">import</span> <span style="color:#ff7b72">javax.crypto.spec.SecretKeySpec</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">import</span> <span style="color:#ff7b72">java.nio.charset.StandardCharsets</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">import</span> <span style="color:#ff7b72">java.security.spec.KeySpec</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">import</span> <span style="color:#ff7b72">java.util.Base64</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">public</span> <span style="color:#ff7b72">class</span> <span style="color:#f0883e;font-weight:bold">AESChallenge</span> <span style="color:#ff7b72;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">private</span> <span style="color:#ff7b72">static</span> <span style="color:#ff7b72">final</span> String AES_ALGORITHM <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">&#34;AES&#34;</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">private</span> <span style="color:#ff7b72">static</span> <span style="color:#ff7b72">final</span> String PBKDF2_ALGORITHM <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">&#34;PBKDF2WithHmacSHA256&#34;</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">private</span> <span style="color:#ff7b72">static</span> <span style="color:#ff7b72">final</span> <span style="color:#ff7b72">int</span> ITERATIONS <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">10000</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">private</span> <span style="color:#ff7b72">static</span> <span style="color:#ff7b72">final</span> <span style="color:#ff7b72">int</span> KEY_SIZE <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">256</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">private</span> <span style="color:#ff7b72">static</span> SecretKey <span style="color:#d2a8ff;font-weight:bold">generateKey</span><span style="color:#ff7b72;font-weight:bold">(</span>String password<span style="color:#ff7b72;font-weight:bold">,</span> <span style="color:#ff7b72">byte</span><span style="color:#ff7b72;font-weight:bold">[]</span> salt<span style="color:#ff7b72;font-weight:bold">)</span> <span style="color:#ff7b72">throws</span> Exception <span style="color:#ff7b72;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        KeySpec spec <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#ff7b72">new</span> PBEKeySpec<span style="color:#ff7b72;font-weight:bold">(</span>password<span style="color:#ff7b72;font-weight:bold">.</span>toCharArray<span style="color:#ff7b72;font-weight:bold">(),</span> salt<span style="color:#ff7b72;font-weight:bold">,</span> ITERATIONS<span style="color:#ff7b72;font-weight:bold">,</span> KEY_SIZE<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>        SecretKeyFactory factory <span style="color:#ff7b72;font-weight:bold">=</span> SecretKeyFactory<span style="color:#ff7b72;font-weight:bold">.</span>getInstance<span style="color:#ff7b72;font-weight:bold">(</span>PBKDF2_ALGORITHM<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>        SecretKey tmp <span style="color:#ff7b72;font-weight:bold">=</span> factory<span style="color:#ff7b72;font-weight:bold">.</span>generateSecret<span style="color:#ff7b72;font-weight:bold">(</span>spec<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">return</span> <span style="color:#ff7b72">new</span> SecretKeySpec<span style="color:#ff7b72;font-weight:bold">(</span>tmp<span style="color:#ff7b72;font-weight:bold">.</span>getEncoded<span style="color:#ff7b72;font-weight:bold">(),</span> AES_ALGORITHM<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">private</span> <span style="color:#ff7b72">static</span> String <span style="color:#d2a8ff;font-weight:bold">encrypt</span><span style="color:#ff7b72;font-weight:bold">(</span>String plainText<span style="color:#ff7b72;font-weight:bold">,</span> SecretKey key<span style="color:#ff7b72;font-weight:bold">)</span> <span style="color:#ff7b72">throws</span> Exception <span style="color:#ff7b72;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        Cipher cipher <span style="color:#ff7b72;font-weight:bold">=</span> Cipher<span style="color:#ff7b72;font-weight:bold">.</span>getInstance<span style="color:#ff7b72;font-weight:bold">(</span>AES_ALGORITHM<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>        cipher<span style="color:#ff7b72;font-weight:bold">.</span>init<span style="color:#ff7b72;font-weight:bold">(</span>Cipher<span style="color:#ff7b72;font-weight:bold">.</span>ENCRYPT_MODE<span style="color:#ff7b72;font-weight:bold">,</span> key<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">byte</span><span style="color:#ff7b72;font-weight:bold">[]</span> encryptedBytes <span style="color:#ff7b72;font-weight:bold">=</span> cipher<span style="color:#ff7b72;font-weight:bold">.</span>doFinal<span style="color:#ff7b72;font-weight:bold">(</span>plainText<span style="color:#ff7b72;font-weight:bold">.</span>getBytes<span style="color:#ff7b72;font-weight:bold">(</span>StandardCharsets<span style="color:#ff7b72;font-weight:bold">.</span>UTF_8<span style="color:#ff7b72;font-weight:bold">));</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">return</span> Base64<span style="color:#ff7b72;font-weight:bold">.</span>getEncoder<span style="color:#ff7b72;font-weight:bold">().</span>encodeToString<span style="color:#ff7b72;font-weight:bold">(</span>encryptedBytes<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">static</span> <span style="color:#ff7b72">void</span> <span style="color:#d2a8ff;font-weight:bold">main</span><span style="color:#ff7b72;font-weight:bold">(</span>String<span style="color:#ff7b72;font-weight:bold">[]</span> args<span style="color:#ff7b72;font-weight:bold">)</span> <span style="color:#ff7b72;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        String flag <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">&#34;REDACTED&#34;</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>        String password <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">&#34;aesiseasy&#34;</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">byte</span><span style="color:#ff7b72;font-weight:bold">[]</span> salt <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">&#34;saltval&#34;</span><span style="color:#ff7b72;font-weight:bold">.</span>getBytes<span style="color:#ff7b72;font-weight:bold">(</span>StandardCharsets<span style="color:#ff7b72;font-weight:bold">.</span>UTF_8<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">try</span> <span style="color:#ff7b72;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            SecretKey key <span style="color:#ff7b72;font-weight:bold">=</span> generateKey<span style="color:#ff7b72;font-weight:bold">(</span>password<span style="color:#ff7b72;font-weight:bold">,</span> salt<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>            String encryptedFlag <span style="color:#ff7b72;font-weight:bold">=</span> encrypt<span style="color:#ff7b72;font-weight:bold">(</span>flag<span style="color:#ff7b72;font-weight:bold">,</span> key<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>            System<span style="color:#ff7b72;font-weight:bold">.</span>out<span style="color:#ff7b72;font-weight:bold">.</span>println<span style="color:#ff7b72;font-weight:bold">(</span><span style="color:#a5d6ff">&#34;Encrypted Flag: &#34;</span> <span style="color:#ff7b72;font-weight:bold">+</span> encryptedFlag<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72;font-weight:bold">}</span> <span style="color:#ff7b72">catch</span> <span style="color:#ff7b72;font-weight:bold">(</span>Exception e<span style="color:#ff7b72;font-weight:bold">)</span> <span style="color:#ff7b72;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            e<span style="color:#ff7b72;font-weight:bold">.</span>printStackTrace<span style="color:#ff7b72;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72;font-weight:bold">}</span>
+</span></span></code></pre></div><h2 id="solving">
+  Solving
+  <a class="heading-link" href="#solving">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The aim here is to be able to decrypt the encrypted message. Since this is symmetrical encryption (AES), doc means that the key is identical for encryption and decryption. We have the key and the salt in the code, so all we have to do is use them to decrypt the content.</p>
+<h3 id="exploit">
+  Exploit
+  <a class="heading-link" href="#exploit">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#ff7b72">import</span> <span style="color:#ff7b72">javax.crypto.Cipher</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">import</span> <span style="color:#ff7b72">javax.crypto.SecretKey</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">import</span> <span style="color:#ff7b72">javax.crypto.SecretKeyFactory</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">import</span> <span style="color:#ff7b72">javax.crypto.spec.PBEKeySpec</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">import</span> <span style="color:#ff7b72">javax.crypto.spec.SecretKeySpec</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">import</span> <span style="color:#ff7b72">java.nio.charset.StandardCharsets</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">import</span> <span style="color:#ff7b72">java.security.spec.KeySpec</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">import</span> <span style="color:#ff7b72">java.util.Base64</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">public</span> <span style="color:#ff7b72">class</span> <span style="color:#f0883e;font-weight:bold">AESChallenge</span> <span style="color:#ff7b72;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">private</span> <span style="color:#ff7b72">static</span> <span style="color:#ff7b72">final</span> String AES_ALGORITHM <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">&#34;AES&#34;</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">private</span> <span style="color:#ff7b72">static</span> <span style="color:#ff7b72">final</span> String PBKDF2_ALGORITHM <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">&#34;PBKDF2WithHmacSHA256&#34;</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">private</span> <span style="color:#ff7b72">static</span> <span style="color:#ff7b72">final</span> <span style="color:#ff7b72">int</span> ITERATIONS <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">10000</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">private</span> <span style="color:#ff7b72">static</span> <span style="color:#ff7b72">final</span> <span style="color:#ff7b72">int</span> KEY_SIZE <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">256</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">private</span> <span style="color:#ff7b72">static</span> SecretKey <span style="color:#d2a8ff;font-weight:bold">generateKey</span><span style="color:#ff7b72;font-weight:bold">(</span>String password<span style="color:#ff7b72;font-weight:bold">,</span> <span style="color:#ff7b72">byte</span><span style="color:#ff7b72;font-weight:bold">[]</span> salt<span style="color:#ff7b72;font-weight:bold">)</span> <span style="color:#ff7b72">throws</span> Exception <span style="color:#ff7b72;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        KeySpec spec <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#ff7b72">new</span> PBEKeySpec<span style="color:#ff7b72;font-weight:bold">(</span>password<span style="color:#ff7b72;font-weight:bold">.</span>toCharArray<span style="color:#ff7b72;font-weight:bold">(),</span> salt<span style="color:#ff7b72;font-weight:bold">,</span> ITERATIONS<span style="color:#ff7b72;font-weight:bold">,</span> KEY_SIZE<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>        SecretKeyFactory factory <span style="color:#ff7b72;font-weight:bold">=</span> SecretKeyFactory<span style="color:#ff7b72;font-weight:bold">.</span>getInstance<span style="color:#ff7b72;font-weight:bold">(</span>PBKDF2_ALGORITHM<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>        SecretKey tmp <span style="color:#ff7b72;font-weight:bold">=</span> factory<span style="color:#ff7b72;font-weight:bold">.</span>generateSecret<span style="color:#ff7b72;font-weight:bold">(</span>spec<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">return</span> <span style="color:#ff7b72">new</span> SecretKeySpec<span style="color:#ff7b72;font-weight:bold">(</span>tmp<span style="color:#ff7b72;font-weight:bold">.</span>getEncoded<span style="color:#ff7b72;font-weight:bold">(),</span> AES_ALGORITHM<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">private</span> <span style="color:#ff7b72">static</span> String <span style="color:#d2a8ff;font-weight:bold">encrypt</span><span style="color:#ff7b72;font-weight:bold">(</span>String plainText<span style="color:#ff7b72;font-weight:bold">,</span> SecretKey key<span style="color:#ff7b72;font-weight:bold">)</span> <span style="color:#ff7b72">throws</span> Exception <span style="color:#ff7b72;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        Cipher cipher <span style="color:#ff7b72;font-weight:bold">=</span> Cipher<span style="color:#ff7b72;font-weight:bold">.</span>getInstance<span style="color:#ff7b72;font-weight:bold">(</span>AES_ALGORITHM<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>        cipher<span style="color:#ff7b72;font-weight:bold">.</span>init<span style="color:#ff7b72;font-weight:bold">(</span>Cipher<span style="color:#ff7b72;font-weight:bold">.</span>ENCRYPT_MODE<span style="color:#ff7b72;font-weight:bold">,</span> key<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">byte</span><span style="color:#ff7b72;font-weight:bold">[]</span> encryptedBytes <span style="color:#ff7b72;font-weight:bold">=</span> cipher<span style="color:#ff7b72;font-weight:bold">.</span>doFinal<span style="color:#ff7b72;font-weight:bold">(</span>plainText<span style="color:#ff7b72;font-weight:bold">.</span>getBytes<span style="color:#ff7b72;font-weight:bold">(</span>StandardCharsets<span style="color:#ff7b72;font-weight:bold">.</span>UTF_8<span style="color:#ff7b72;font-weight:bold">));</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">return</span> Base64<span style="color:#ff7b72;font-weight:bold">.</span>getEncoder<span style="color:#ff7b72;font-weight:bold">().</span>encodeToString<span style="color:#ff7b72;font-weight:bold">(</span>encryptedBytes<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">private</span> <span style="color:#ff7b72">static</span> String <span style="color:#d2a8ff;font-weight:bold">decrypt</span><span style="color:#ff7b72;font-weight:bold">(</span>String cipherbase64<span style="color:#ff7b72;font-weight:bold">,</span> SecretKey key<span style="color:#ff7b72;font-weight:bold">)</span> <span style="color:#ff7b72">throws</span> Exception <span style="color:#ff7b72;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        Cipher cipher <span style="color:#ff7b72;font-weight:bold">=</span> Cipher<span style="color:#ff7b72;font-weight:bold">.</span>getInstance<span style="color:#ff7b72;font-weight:bold">(</span>AES_ALGORITHM<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>        cipher<span style="color:#ff7b72;font-weight:bold">.</span>init<span style="color:#ff7b72;font-weight:bold">(</span>Cipher<span style="color:#ff7b72;font-weight:bold">.</span>DECRYPT_MODE<span style="color:#ff7b72;font-weight:bold">,</span> key<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">byte</span><span style="color:#ff7b72;font-weight:bold">[]</span> encryptedBytes <span style="color:#ff7b72;font-weight:bold">=</span> Base64<span style="color:#ff7b72;font-weight:bold">.</span>getDecoder<span style="color:#ff7b72;font-weight:bold">().</span>decode<span style="color:#ff7b72;font-weight:bold">(</span>cipherbase64<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">byte</span><span style="color:#ff7b72;font-weight:bold">[]</span> decoded <span style="color:#ff7b72;font-weight:bold">=</span> cipher<span style="color:#ff7b72;font-weight:bold">.</span>doFinal<span style="color:#ff7b72;font-weight:bold">(</span>encryptedBytes<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">return</span> <span style="color:#ff7b72">new</span> String<span style="color:#ff7b72;font-weight:bold">(</span>decoded<span style="color:#ff7b72;font-weight:bold">,</span> <span style="color:#a5d6ff">&#34;UTF-8&#34;</span><span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">static</span> <span style="color:#ff7b72">void</span> <span style="color:#d2a8ff;font-weight:bold">main</span><span style="color:#ff7b72;font-weight:bold">(</span>String<span style="color:#ff7b72;font-weight:bold">[]</span> args<span style="color:#ff7b72;font-weight:bold">)</span> <span style="color:#ff7b72;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        String password <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">&#34;aesiseasy&#34;</span><span style="color:#ff7b72;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">byte</span><span style="color:#ff7b72;font-weight:bold">[]</span> salt <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">&#34;saltval&#34;</span><span style="color:#ff7b72;font-weight:bold">.</span>getBytes<span style="color:#ff7b72;font-weight:bold">(</span>StandardCharsets<span style="color:#ff7b72;font-weight:bold">.</span>UTF_8<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">try</span> <span style="color:#ff7b72;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            SecretKey key <span style="color:#ff7b72;font-weight:bold">=</span> generateKey<span style="color:#ff7b72;font-weight:bold">(</span>password<span style="color:#ff7b72;font-weight:bold">,</span> salt<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>            String DecryptedFlag <span style="color:#ff7b72;font-weight:bold">=</span> decrypt<span style="color:#ff7b72;font-weight:bold">(</span><span style="color:#a5d6ff">&#34;FOqxc90aMQZydCQb2MUm5tj4kRIxxVeCDWzAANfOrr8JItHYneUHhSV0awvQIo/8E1LtfYm/+VVWz0PDK6MXp38BWHoFDorhdS44DzYj9CQ=&#34;</span><span style="color:#ff7b72;font-weight:bold">,</span> key<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>            System<span style="color:#ff7b72;font-weight:bold">.</span>out<span style="color:#ff7b72;font-weight:bold">.</span>println<span style="color:#ff7b72;font-weight:bold">(</span><span style="color:#a5d6ff">&#34;Decrypted Flag: &#34;</span> <span style="color:#ff7b72;font-weight:bold">+</span> DecryptedFlag<span style="color:#ff7b72;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72;font-weight:bold">}</span> <span style="color:#ff7b72">catch</span> <span style="color:#ff7b72;font-weight:bold">(</span>Exception e<span style="color:#ff7b72;font-weight:bold">)</span> <span style="color:#ff7b72;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            e<span style="color:#ff7b72;font-weight:bold">.</span>printStackTrace<span style="color:#ff7b72;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72;font-weight:bold">}</span>
+</span></span></code></pre></div><h3 id="result">
+  Result
+  <a class="heading-link" href="#result">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<pre tabindex="0"><code>Decrypted Flag: n00bz{1_d0n&#39;t_l1k3_a3s_ch4ll3ng3_d0_y0u_lik3?_41703148ed8347adbe238ffbdbaf5e16}
+</code></pre>
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script>
+  window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "0x3EB" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    
+    document.addEventListener('themeChanged', function (e) { 
+        if (document.readyState == 'complete') {
+          DISQUS.reset({ reload: true, config: disqus_config });
+        }
+    });
+</script>
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2023
+     0x3EB 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

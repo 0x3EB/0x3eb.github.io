@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Forensics on 0x3EB</title>
+    <link>https://0x3eb.github.com/tags/forensics/</link>
+    <description>Recent content in Forensics on 0x3EB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://0x3eb.github.com/tags/forensics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Avengers</title>
+      <link>https://0x3eb.github.com/posts/avengers/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/avengers/</guid>
+      <description>DescriptionLink to headingWhat houses the space stone?
+Attachement : flag.avi
+SolvingLink to headingThe file is a video with some chars encoded in hex. The goal is to perform an analysis of each frame using Tesseract to get the hex and compute the string conversion.
+ResultLink to headingn00bz{7h1s_1s_4_v3ry_l0ng_fl4g_s0_th4t_y0u_c4nn0t_s0lv3_7h3_ch4ll3ng3_m4nu4lly_b7w_73s3r4c7_1s_4_v3ry_g00d_t00l!} </description>
+    </item>
+    
+    <item>
+      <title>Crack &amp; Crack</title>
+      <link>https://0x3eb.github.com/posts/crack-and-crack/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/crack-and-crack/</guid>
+      <description>DescriptionLink to headingJust Crack &amp;amp; Crack!
+Attachement : Flag.zip
+SolvingLink to headingthe ZIP file is protected by a password. We can use John to decrypt the password.
+zip2john flag.zip &amp;gt; zip_hashjohn --wordlist=/usr/share/wordlists/rockyou.txt zip_hashunzip flag.zip # type the password &amp;#39;1337h4x0r&amp;#39; We get a PDF file, which is also protected by a password
+pdf2john flag.pdf &amp;gt; pdf_hashjohn --wordlist=/usr/share/wordlists/rockyou.txt pdf_hashxdg-open flag.pdf # Enter the password &amp;#39;noobmaster&amp;#39; ResultLink to headingn00bz{CR4CK3D_4ND_CR4CK3D_1a4d2e5f} </description>
+    </item>
+    
+    <item>
+      <title>Hecked</title>
+      <link>https://0x3eb.github.com/posts/hecked/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/hecked/</guid>
+      <description>DescriptionLink to headingSomeone hacked my server :( Can you please find out how? Note: Flag is n00bz{md5sum(vulnerableService_serviceVersion_attackersFirstBashCommandOnTheHackedServer)}
+Replace the md5sum(&amp;hellip;) with the ACTUAL MD5SUM of the above when you find it, like so: echo -n vulnerableService_serviceVersion_attackersFirstBashCommandOnHackedServer | md5sum Also, case and underscores are important!
+Attachement : dump.pcap
+SolvingLink to headingThe given file is a pcap file, so open it up in Wireshark. we can follow the TCP Stream.</description>
+    </item>
+    
+  </channel>
+</rss>

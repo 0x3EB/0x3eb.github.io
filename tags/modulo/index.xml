@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Modulo on 0x3EB</title>
+    <link>https://0x3eb.github.com/tags/modulo/</link>
+    <description>Recent content in Modulo on 0x3EB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://0x3eb.github.com/tags/modulo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MaaS</title>
+      <link>https://0x3eb.github.com/posts/maas/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/maas/</guid>
+      <description>DecriptionLink to headingWelcome to MaaS - Modulo as a Service!
+nc challs.n00bzunit3d.xyz 51081 attachement :
+#!/usr/bin/python3 import random from Crypto.Util.number import * flag = open(&amp;#39;flag.txt&amp;#39;).read() alpha = &amp;#39;abcdefghijklmnopqrstuvwxyz&amp;#39;.upper() to_guess = &amp;#39;&amp;#39; for i in range(16): to_guess += random.choice(alpha) for i in range(len(to_guess)): for j in range(3): inp = int(input(f&amp;#39;Guessing letter {i}, Enter Guess: &amp;#39;)) guess = inp &amp;lt;&amp;lt; 16 print(guess % ord(to_guess[i])) last_guess = input(&amp;#39;Enter Guess: &amp;#39;) if last_guess == to_guess: print(flag) else: print(&amp;#39;Incorrect!</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>0x3EB</title>
+    <link>https://0x3eb.github.com/</link>
+    <description>Recent content on 0x3EB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://0x3eb.github.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About me</title>
+      <link>https://0x3eb.github.com/about/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/about/</guid>
+      <description>Welcome to my website.
+Cysecurity Engineer, working as a Consultant.
+Linux lover.</description>
+    </item>
+    
+    <item>
+      <title>AES-1</title>
+      <link>https://0x3eb.github.com/posts/aes-1/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/aes-1/</guid>
+      <description>DescriptionLink to headingMy cousin-sister messaged me on Instagram that she has got some text FOqxc90aMQZydCQb2MUm5tj4kRIxxVeCDWzAANfOrr8JItHYneUHhSV0awvQIo/8E1LtfYm/+VVWz0PDK6MXp38BWHoFDorhdS44DzYj9CQ= and a text file in which something like String password: aesiseasy and Salt: saltval was writt,en can you help her to decode the weird text?
+Attachement :
+import javax.crypto.Cipher; import javax.crypto.SecretKey; import javax.crypto.SecretKeyFactory; import javax.crypto.spec.PBEKeySpec; import javax.crypto.spec.SecretKeySpec; import java.nio.charset.StandardCharsets; import java.security.spec.KeySpec; import java.util.Base64; public class AESChallenge { private static final String AES_ALGORITHM = &amp;#34;AES&amp;#34;; private static final String PBKDF2_ALGORITHM = &amp;#34;PBKDF2WithHmacSHA256&amp;#34;; private static final int ITERATIONS = 10000; private static final int KEY_SIZE = 256; private static SecretKey generateKey(String password, byte[] salt) throws Exception { KeySpec spec = new PBEKeySpec(password.</description>
+    </item>
+    
+    <item>
+      <title>Amazing Song Lyrics</title>
+      <link>https://0x3eb.github.com/posts/amazing-song-lyrics/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/amazing-song-lyrics/</guid>
+      <description>DescriptionLink to headingThis is a wierd png file. I hope you can make some sense out of it!
+Attachement :
+SolvingLink to headingWe just have to look for the defintion of each sign
+ResultLink to headingn00bz{americansignlanguagedecoded} </description>
+    </item>
+    
+    <item>
+      <title>Avengers</title>
+      <link>https://0x3eb.github.com/posts/avengers/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/avengers/</guid>
+      <description>DescriptionLink to headingWhat houses the space stone?
+Attachement : flag.avi
+SolvingLink to headingThe file is a video with some chars encoded in hex. The goal is to perform an analysis of each frame using Tesseract to get the hex and compute the string conversion.
+ResultLink to headingn00bz{7h1s_1s_4_v3ry_l0ng_fl4g_s0_th4t_y0u_c4nn0t_s0lv3_7h3_ch4ll3ng3_m4nu4lly_b7w_73s3r4c7_1s_4_v3ry_g00d_t00l!} </description>
+    </item>
+    
+    <item>
+      <title>Big Blacklist</title>
+      <link>https://0x3eb.github.com/posts/big-blacklist/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/big-blacklist/</guid>
+      <description>DescriptionLink to headingThat&amp;rsquo;s a big blacklist for a pyjail challenge, don&amp;rsquo;t you think? Author: NoobMaster
+nc challs.n00bzunit3d.xyz 8412 SolvingLink to headingOnce connected on the server, we can find the code of the PyJail.
+blacklist = [&amp;#34;/&amp;#34;,&amp;#34;0&amp;#34;,&amp;#34;1&amp;#34;,&amp;#34;2&amp;#34;,&amp;#34;3&amp;#34;,&amp;#34;4&amp;#34;,&amp;#34;5&amp;#34;,&amp;#34;6&amp;#34;,&amp;#34;7&amp;#34;,&amp;#34;8&amp;#34;,&amp;#34;9&amp;#34;,&amp;#34;setattr&amp;#34;,&amp;#34;compile&amp;#34;,&amp;#34;globals&amp;#34;, \ &amp;#34;os&amp;#34;,&amp;#34;import&amp;#34;,&amp;#34;_&amp;#34;,&amp;#34;breakpoint&amp;#34;,&amp;#34;exit&amp;#34;,&amp;#34;lambda&amp;#34;,&amp;#34;eval&amp;#34;,&amp;#34;exec&amp;#34;,&amp;#34;read&amp;#34;,&amp;#34;print&amp;#34;, \ &amp;#34;open&amp;#34;,&amp;#34;&amp;#39;&amp;#34;,&amp;#34;=&amp;#34;,&amp;#39;&amp;#34;&amp;#39;,&amp;#34;x&amp;#34;,&amp;#34;builtins&amp;#34;,&amp;#34;clear&amp;#34;] print(&amp;#34;=&amp;#34;*25) print(open(__file__).read()) print(&amp;#34;=&amp;#34;*25) print(&amp;#34;Welcome to the jail!&amp;#34;) print(&amp;#34;=&amp;#34;*25) for i in range(2): x = input(&amp;#39;Enter command: &amp;#39;) for c in blacklist: if c in x: print(&amp;#34;Blacklisted word found!</description>
+    </item>
+    
+    <item>
+      <title>Club n00b</title>
+      <link>https://0x3eb.github.com/posts/club-n00b/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/club-n00b/</guid>
+      <description>DescriptionLink to headingCan you get in the club?
+http://challs.n00bzunit3d.xyz:8080/
+SolvingLink to headingThe homepage displays some filler text, the word &amp;ldquo;radical&amp;rdquo; with some css styling, and a button. Clicking the button takes you to /check?secret_phrase=nope. Changing the phrase to radical(case-sensitive, has to be lowercase) takes you to /members_only.html?flag=n00bz{see_you_in_the_club_acting_real_nice}.
+ResultLink to headingn00bz{see_you_in_the_club_acting_real_nice} </description>
+    </item>
+    
+    <item>
+      <title>Conditions</title>
+      <link>https://0x3eb.github.com/posts/conditions/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/conditions/</guid>
+      <description>DescriptionLink to headingThat&amp;rsquo;s a big blacklist for a pyjail challenge, don&amp;rsquo;t you think?
+attachement :
+from flask import Flask, request, render_template, render_template_string, redirect import subprocess import urllib flag = open(&amp;#39;flag.txt&amp;#39;).read() app = Flask(__name__) @app.route(&amp;#39;/&amp;#39;) def main(): return redirect(&amp;#39;/login&amp;#39;) @app.route(&amp;#39;/login&amp;#39;,methods=[&amp;#39;GET&amp;#39;,&amp;#39;POST&amp;#39;]) def login(): if request.method == &amp;#39;GET&amp;#39;: return render_template(&amp;#39;login.html&amp;#39;) elif request.method == &amp;#39;POST&amp;#39;: if len(request.values[&amp;#34;username&amp;#34;]) &amp;gt;= 40: return render_template_string(&amp;#34;Username is too long!&amp;#34;) elif len(request.values[&amp;#34;username&amp;#34;].upper()) &amp;lt;= 50: return render_template_string(&amp;#34;Username is too short!</description>
+    </item>
+    
+    <item>
+      <title>Crack &amp; Crack</title>
+      <link>https://0x3eb.github.com/posts/crack-and-crack/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/crack-and-crack/</guid>
+      <description>DescriptionLink to headingJust Crack &amp;amp; Crack!
+Attachement : Flag.zip
+SolvingLink to headingthe ZIP file is protected by a password. We can use John to decrypt the password.
+zip2john flag.zip &amp;gt; zip_hashjohn --wordlist=/usr/share/wordlists/rockyou.txt zip_hashunzip flag.zip # type the password &amp;#39;1337h4x0r&amp;#39; We get a PDF file, which is also protected by a password
+pdf2john flag.pdf &amp;gt; pdf_hashjohn --wordlist=/usr/share/wordlists/rockyou.txt pdf_hashxdg-open flag.pdf # Enter the password &amp;#39;noobmaster&amp;#39; ResultLink to headingn00bz{CR4CK3D_4ND_CR4CK3D_1a4d2e5f} </description>
+    </item>
+    
+    <item>
+      <title>Damn</title>
+      <link>https://0x3eb.github.com/posts/damn/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/damn/</guid>
+      <description>DescriptionLink to headingDamn bro, Dam! &amp;ndash; Note: Find out the city that this dam is in. Flag format is n00bz{City_Name}
+SolvingLink to headingSearching on google images, clicking on &amp;ldquo;Find Image Source&amp;rdquo;. Going on the first link(https://www.axios.com/2023/06/06/un-ukraine-russia-dam-collapse-monumental-catastrophe), you can see under the caption it says &amp;ldquo;Kakhovka dam&amp;rdquo;. Searching up that on wiki, scrolling down, on the right hand side you can see that it is in &amp;ldquo;Nova Kakhovka&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>EZrev</title>
+      <link>https://0x3eb.github.com/posts/ezrev/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/ezrev/</guid>
+      <description>DescriptionLink to headingRev is EZ!
+Attachement : EZrev.class
+SolvingLink to headingResultLink to headingn00bz{r3v_1s_s0_e4zy_r1ght??!!} </description>
+    </item>
+    
+    <item>
+      <title>Flag Shop</title>
+      <link>https://0x3eb.github.com/posts/flag-shop/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/flag-shop/</guid>
+      <description>DescriptionLink to headingCome and buy yourself a flag!
+nc challs.n00bzunit3d.xyz 50267 SolvingLink to headingThe program offers 3 choices. We need to buy the flag which costs $1337 but we only have $100 available.
+We can buy a fake flag which costs only $50. We are asked how much of the false flag we want. At this point, we try to put negative quantities, like &amp;ldquo;-2&amp;rdquo;. We check our bank account and see that we&amp;rsquo;ve earned $100.</description>
+    </item>
+    
+    <item>
+      <title>Google Form 1</title>
+      <link>https://0x3eb.github.com/posts/google-form-1/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/google-form-1/</guid>
+      <description>DesciptionLink to headingBinary Flag Checkers are old, so how about some Google Forms Flag Checker?
+Attachement :
+https://forms.gle/bMDsajnZusN4XvNa6
+SolvingLink to headingOn the form page, we just have to inspect the page and find the flag.
+n00bz{1n5p3ct_3l3m3n7_ftw!} </description>
+    </item>
+    
+    <item>
+      <title>Hecked</title>
+      <link>https://0x3eb.github.com/posts/hecked/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/hecked/</guid>
+      <description>DescriptionLink to headingSomeone hacked my server :( Can you please find out how? Note: Flag is n00bz{md5sum(vulnerableService_serviceVersion_attackersFirstBashCommandOnTheHackedServer)}
+Replace the md5sum(&amp;hellip;) with the ACTUAL MD5SUM of the above when you find it, like so: echo -n vulnerableService_serviceVersion_attackersFirstBashCommandOnHackedServer | md5sum Also, case and underscores are important!
+Attachement : dump.pcap
+SolvingLink to headingThe given file is a pcap file, so open it up in Wireshark. we can follow the TCP Stream.</description>
+    </item>
+    
+    <item>
+      <title>Lost</title>
+      <link>https://0x3eb.github.com/posts/lost/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/lost/</guid>
+      <description>DescriptionLink to headingI got lost. Help me find out where I am. Flag format is n00bz{Name_Of_Pin_On_Google_Maps}
+SolvingLink to headingCheck the image meta data to see that the photo was taken in San Francisco. Use google maps and the fact that the photo is in San Francisco to identify the bridge as the Oakland Bay Bridge. At which point you know the photo is in Downtown San Francisco looking east.</description>
+    </item>
+    
+    <item>
+      <title>MaaS</title>
+      <link>https://0x3eb.github.com/posts/maas/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/maas/</guid>
+      <description>DecriptionLink to headingWelcome to MaaS - Modulo as a Service!
+nc challs.n00bzunit3d.xyz 51081 attachement :
+#!/usr/bin/python3 import random from Crypto.Util.number import * flag = open(&amp;#39;flag.txt&amp;#39;).read() alpha = &amp;#39;abcdefghijklmnopqrstuvwxyz&amp;#39;.upper() to_guess = &amp;#39;&amp;#39; for i in range(16): to_guess += random.choice(alpha) for i in range(len(to_guess)): for j in range(3): inp = int(input(f&amp;#39;Guessing letter {i}, Enter Guess: &amp;#39;)) guess = inp &amp;lt;&amp;lt; 16 print(guess % ord(to_guess[i])) last_guess = input(&amp;#39;Enter Guess: &amp;#39;) if last_guess == to_guess: print(flag) else: print(&amp;#39;Incorrect!</description>
+    </item>
+    
+    <item>
+      <title>Mission Moon</title>
+      <link>https://0x3eb.github.com/posts/mission-moon/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/mission-moon/</guid>
+      <description>DescriptionLink to headingA mission, had planned to land on the moon. Can you find where it planned to land on the moon and the name of the lander and rover? Flag is latitude longitude upto one decimal place.
+Flag format - n00bz{Lander_Rover_latitude_longitude} for eg - n00bz{Examplelander_Examplerover_12.3_45.6}. Also note that flag is case sensitive! Due to a quite big range of answers, to narrow down your search, use the latitude and longitude provided from this site: blog.</description>
+    </item>
+    
+    <item>
+      <title>My Chemical Romance</title>
+      <link>https://0x3eb.github.com/posts/my-chemical-romance/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/my-chemical-romance/</guid>
+      <description>DescriptionLink to headingMy friend loves Chemistry very much specially the elements. Once I asked him the wifi password he gave me some numbers like 186808155710 and told me that the number are in group of two like 1008 -&amp;gt; 10 and 08/8. Can you help to gather the wifi password? (Note: It forms a complete word, so you might have to leave out something).
+Flag format: n00bz{the_password_in_lower_case}</description>
+    </item>
+    
+    <item>
+      <title>MyPin</title>
+      <link>https://0x3eb.github.com/posts/mypin/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/mypin/</guid>
+      <description>DescriptionLink to headingI made a safe with a pin of only two digits.
+Attachement : My-pin.jar
+SolvingLink to headingUsing a online jar decompiler (http://www.javadecompilers.com/), we are able to see all the files used in that Jar and starting to reverse them.
+The class Secret is very interesting because that contains all the process and calculation.
+class Secret { private int cnt; private int[] box; private int[] mydata; private static Secret instance; private Secret() { this.</description>
+    </item>
+    
+    <item>
+      <title>Numbers</title>
+      <link>https://0x3eb.github.com/posts/numbers/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/numbers/</guid>
+      <description>DescriptionLink to headingWelcome to numbers! just answer my few questions to get the flag!
+SolvingLink to headingThe goal of this challenge is to find how many times the first number is in the second one. E.g : &amp;ldquo;How many 3&amp;rsquo;s appear till 40?&amp;rdquo; The answer - 14 because [&amp;lsquo;3&amp;rsquo;,&amp;lsquo;13&amp;rsquo;,&amp;lsquo;23&amp;rsquo;,&amp;lsquo;30&amp;rsquo;,&amp;lsquo;31&amp;rsquo;,&amp;lsquo;32&amp;rsquo;,&amp;lsquo;33&amp;rsquo;,&amp;lsquo;33&amp;rsquo;,&amp;lsquo;34&amp;rsquo;,&amp;lsquo;35&amp;rsquo;,&amp;lsquo;36&amp;rsquo;,&amp;lsquo;37&amp;rsquo;,&amp;lsquo;38&amp;rsquo;,&amp;lsquo;39&amp;rsquo;].
+We just have iterate and count how many times we found the first number.
+from pwn import * conn = remote(&amp;#39;challs.</description>
+    </item>
+    
+    <item>
+      <title>Pwn1</title>
+      <link>https://0x3eb.github.com/posts/pwn1/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/pwn1/</guid>
+      <description>DescriptionLink to headingWelcome to the series of 3 pwn challenges!
+nc challs.n00bzunit3d.xyz 35932 Attachement : pwn1
+SolvingLink to headingWe have to get the ASM of the program and getting the offset of the Buffer Overflow.
+objdump -D pwn1 00000000004011fb &amp;lt;main&amp;gt;: 4011fb: f3 0f 1e fa endbr64 4011ff: 55 push %rbp 401200: 48 89 e5 mov %rsp,%rbp 401203: 48 83 ec 40 sub $0x40,%rsp 401207: b8 00 00 00 00 mov $0x0,%eax 40120c: e8 85 ff ff ff call 401196 &amp;lt;init&amp;gt; 401211: 48 8d 05 ec 0d 00 00 lea 0xdec(%rip),%rax # 402004 &amp;lt;_IO_stdin_used+0x4&amp;gt; 401218: 48 89 c7 mov %rax,%rdi 40121b: e8 50 fe ff ff call 401070 &amp;lt;puts@plt&amp;gt; 401220: 48 8b 15 49 2e 00 00 mov 0x2e49(%rip),%rdx # 404070 &amp;lt;stdin@GLIBC_2.</description>
+    </item>
+    
+    <item>
+      <title>Robots</title>
+      <link>https://0x3eb.github.com/posts/robots/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/robots/</guid>
+      <description>DescriptionLink to headingDang, if only there was some standardized way to tell webcrawlers how to index your site. I guess we have to build our own.
+http://challs.n00bzunit3d.xyz:36083
+SolvingLink to headingWe are redirecing on http://challs.n00bzunit3d.xyz:36083/robots.
+Since we know that web servers store robots.txt, we can do :
+curl http://challs.n00bzunit3d.xyz:36083/robots.txt ResultLink to headingn00bz{1_f0und_7h3_r0b0ts!} </description>
+    </item>
+    
+    <item>
+      <title>Secret Group</title>
+      <link>https://0x3eb.github.com/posts/secret-group/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/secret-group/</guid>
+      <description>DescriptionLink to headingTo get the flag, you must be a member of the secret group!
+http://challs.n00bzunit3d.xyz:31401/
+SolvingLink to headingWhen you go on the website, it says &amp;ldquo;Not an agent of the n00bz-4dm1n secure browser!&amp;rdquo;.
+So using a tool like burpsuite, change your User-Agent to n00bz-4dm1n. Upon visiting the website again, it says &amp;ldquo;Does not Accept fl4g&amp;rdquo;.
+So change your Accept to fl4g. Upon visiting the website again, it says &amp;ldquo;Connection not s3cur3&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>The online odyssey</title>
+      <link>https://0x3eb.github.com/posts/the-online-odyssey/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/the-online-odyssey/</guid>
+      <description>DescriptionLink to headingMy friend blackhat_abhinav gave me a ctf challenge and told me that the challenge is full of mystery and he wanted me to solve the mystery and get the flag. Can you help me to get the flag?
+Flag format:- n00bz{fl4g_h3r3}
+SolvingLink to headingSo it&amp;rsquo;s a very easy challenge. We are given a name i.e brayannoob.
+After checking the Github profiles we found a commit with usernames</description>
+    </item>
+    
+    <item>
+      <title>Try to hack me</title>
+      <link>https://0x3eb.github.com/posts/try-to-hack-me/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/try-to-hack-me/</guid>
+      <description>DescriptionLink to headingMy friend brayannoob gave me a ctf challenge and told me Try to hack me
+SolvingLink to headingSo it&amp;rsquo;s a very easy challenge. We are given a name i.e brayannoob.
+After checking the Github profiles we found a commit with usernames
+We find some username now according to challenge name the username is of Tryhackme so going to https://tryhackme.com/p/brayan234 we can see the flag.</description>
+    </item>
+    
+    <item>
+      <title>VM</title>
+      <link>https://0x3eb.github.com/posts/vm/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/vm/</guid>
+      <description>DescriptionLink to headingEver tried reversing a VM? Here&amp;rsquo;s a simple one!
+Attachements : code and VM
+SolvingLink to headingThe flag is in the code file
+strings code ResultLink to headingn00bz{x0r_XoRR_xOR} </description>
+    </item>
+    
+    <item>
+      <title>Welcome</title>
+      <link>https://0x3eb.github.com/posts/welcome/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/welcome/</guid>
+      <description>DescriptionLink to headingCan you help me pass the right input to get the flag?
+Attachement : chal
+SolvingLink to headingParsing the file using the strings commands to get the encoded chars
+strings chall | grep n00bz ResultLink to headingn00bz{N3v3R_$torE_$ENs1TIV3_1nFOrMa7IOn_P1aiNtexT_In_yoUr_bin4rI3S!!!!!} </description>
+    </item>
+    
+    <item>
+      <title>ZZZ</title>
+      <link>https://0x3eb.github.com/posts/zzz/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/zzz/</guid>
+      <description>DescriptionLink to heading3z
+Attachement : chall
+SolvingLink to headingOpen the binary in ghidra, see that there are too many conditions in the check function.
+void check(char *param_1) { if (*param_1 &amp;gt;&amp;gt; 4 != &amp;#39;\x06&amp;#39;) { bye(); } if (param_1[1] != param_1[2]) { bye(); } if (((byte)(param_1[6] | param_1[3]) != 0x7a) || ((byte)(param_1[6] &amp;amp; param_1[3]) != 0x42)) { bye(); } if (param_1[0x1c] != param_1[4]) { bye(); } if ((int)param_1[0x1d] * (int)param_1[5] == 0x3c0f) { if (((int)param_1[8] + (int)param_1[6] + (int)param_1[7] !</description>
+    </item>
+    
+  </channel>
+</rss>

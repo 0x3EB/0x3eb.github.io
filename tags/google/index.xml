@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google on 0x3EB</title>
+    <link>https://0x3eb.github.com/tags/google/</link>
+    <description>Recent content in Google on 0x3EB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://0x3eb.github.com/tags/google/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google Form 1</title>
+      <link>https://0x3eb.github.com/posts/google-form-1/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/google-form-1/</guid>
+      <description>DesciptionLink to headingBinary Flag Checkers are old, so how about some Google Forms Flag Checker?
+Attachement :
+https://forms.gle/bMDsajnZusN4XvNa6
+SolvingLink to headingOn the form page, we just have to inspect the page and find the flag.
+n00bz{1n5p3ct_3l3m3n7_ftw!} </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on 0x3EB</title>
+    <link>https://0x3eb.github.com/tags/java/</link>
+    <description>Recent content in Java on 0x3EB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://0x3eb.github.com/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AES-1</title>
+      <link>https://0x3eb.github.com/posts/aes-1/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/aes-1/</guid>
+      <description>DescriptionLink to headingMy cousin-sister messaged me on Instagram that she has got some text FOqxc90aMQZydCQb2MUm5tj4kRIxxVeCDWzAANfOrr8JItHYneUHhSV0awvQIo/8E1LtfYm/+VVWz0PDK6MXp38BWHoFDorhdS44DzYj9CQ= and a text file in which something like String password: aesiseasy and Salt: saltval was writt,en can you help her to decode the weird text?
+Attachement :
+import javax.crypto.Cipher; import javax.crypto.SecretKey; import javax.crypto.SecretKeyFactory; import javax.crypto.spec.PBEKeySpec; import javax.crypto.spec.SecretKeySpec; import java.nio.charset.StandardCharsets; import java.security.spec.KeySpec; import java.util.Base64; public class AESChallenge { private static final String AES_ALGORITHM = &amp;#34;AES&amp;#34;; private static final String PBKDF2_ALGORITHM = &amp;#34;PBKDF2WithHmacSHA256&amp;#34;; private static final int ITERATIONS = 10000; private static final int KEY_SIZE = 256; private static SecretKey generateKey(String password, byte[] salt) throws Exception { KeySpec spec = new PBEKeySpec(password.</description>
+    </item>
+    
+    <item>
+      <title>MyPin</title>
+      <link>https://0x3eb.github.com/posts/mypin/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/mypin/</guid>
+      <description>DescriptionLink to headingI made a safe with a pin of only two digits.
+Attachement : My-pin.jar
+SolvingLink to headingUsing a online jar decompiler (http://www.javadecompilers.com/), we are able to see all the files used in that Jar and starting to reverse them.
+The class Secret is very interesting because that contains all the process and calculation.
+class Secret { private int cnt; private int[] box; private int[] mydata; private static Secret instance; private Secret() { this.</description>
+    </item>
+    
+  </channel>
+</rss>

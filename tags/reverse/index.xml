@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reverse on 0x3EB</title>
+    <link>https://0x3eb.github.com/tags/reverse/</link>
+    <description>Recent content in Reverse on 0x3EB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://0x3eb.github.com/tags/reverse/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EZrev</title>
+      <link>https://0x3eb.github.com/posts/ezrev/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/ezrev/</guid>
+      <description>DescriptionLink to headingRev is EZ!
+Attachement : EZrev.class
+SolvingLink to headingResultLink to headingn00bz{r3v_1s_s0_e4zy_r1ght??!!} </description>
+    </item>
+    
+    <item>
+      <title>MyPin</title>
+      <link>https://0x3eb.github.com/posts/mypin/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/mypin/</guid>
+      <description>DescriptionLink to headingI made a safe with a pin of only two digits.
+Attachement : My-pin.jar
+SolvingLink to headingUsing a online jar decompiler (http://www.javadecompilers.com/), we are able to see all the files used in that Jar and starting to reverse them.
+The class Secret is very interesting because that contains all the process and calculation.
+class Secret { private int cnt; private int[] box; private int[] mydata; private static Secret instance; private Secret() { this.</description>
+    </item>
+    
+    <item>
+      <title>VM</title>
+      <link>https://0x3eb.github.com/posts/vm/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/vm/</guid>
+      <description>DescriptionLink to headingEver tried reversing a VM? Here&amp;rsquo;s a simple one!
+Attachements : code and VM
+SolvingLink to headingThe flag is in the code file
+strings code ResultLink to headingn00bz{x0r_XoRR_xOR} </description>
+    </item>
+    
+    <item>
+      <title>Welcome</title>
+      <link>https://0x3eb.github.com/posts/welcome/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/welcome/</guid>
+      <description>DescriptionLink to headingCan you help me pass the right input to get the flag?
+Attachement : chal
+SolvingLink to headingParsing the file using the strings commands to get the encoded chars
+strings chall | grep n00bz ResultLink to headingn00bz{N3v3R_$torE_$ENs1TIV3_1nFOrMa7IOn_P1aiNtexT_In_yoUr_bin4rI3S!!!!!} </description>
+    </item>
+    
+    <item>
+      <title>ZZZ</title>
+      <link>https://0x3eb.github.com/posts/zzz/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/zzz/</guid>
+      <description>DescriptionLink to heading3z
+Attachement : chall
+SolvingLink to headingOpen the binary in ghidra, see that there are too many conditions in the check function.
+void check(char *param_1) { if (*param_1 &amp;gt;&amp;gt; 4 != &amp;#39;\x06&amp;#39;) { bye(); } if (param_1[1] != param_1[2]) { bye(); } if (((byte)(param_1[6] | param_1[3]) != 0x7a) || ((byte)(param_1[6] &amp;amp; param_1[3]) != 0x42)) { bye(); } if (param_1[0x1c] != param_1[4]) { bye(); } if ((int)param_1[0x1d] * (int)param_1[5] == 0x3c0f) { if (((int)param_1[8] + (int)param_1[6] + (int)param_1[7] !</description>
+    </item>
+    
+  </channel>
+</rss>

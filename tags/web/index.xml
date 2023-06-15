@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on 0x3EB</title>
+    <link>https://0x3eb.github.com/tags/web/</link>
+    <description>Recent content in Web on 0x3EB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://0x3eb.github.com/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Club n00b</title>
+      <link>https://0x3eb.github.com/posts/club-n00b/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/club-n00b/</guid>
+      <description>DescriptionLink to headingCan you get in the club?
+http://challs.n00bzunit3d.xyz:8080/
+SolvingLink to headingThe homepage displays some filler text, the word &amp;ldquo;radical&amp;rdquo; with some css styling, and a button. Clicking the button takes you to /check?secret_phrase=nope. Changing the phrase to radical(case-sensitive, has to be lowercase) takes you to /members_only.html?flag=n00bz{see_you_in_the_club_acting_real_nice}.
+ResultLink to headingn00bz{see_you_in_the_club_acting_real_nice} </description>
+    </item>
+    
+    <item>
+      <title>Conditions</title>
+      <link>https://0x3eb.github.com/posts/conditions/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/conditions/</guid>
+      <description>DescriptionLink to headingThat&amp;rsquo;s a big blacklist for a pyjail challenge, don&amp;rsquo;t you think?
+attachement :
+from flask import Flask, request, render_template, render_template_string, redirect import subprocess import urllib flag = open(&amp;#39;flag.txt&amp;#39;).read() app = Flask(__name__) @app.route(&amp;#39;/&amp;#39;) def main(): return redirect(&amp;#39;/login&amp;#39;) @app.route(&amp;#39;/login&amp;#39;,methods=[&amp;#39;GET&amp;#39;,&amp;#39;POST&amp;#39;]) def login(): if request.method == &amp;#39;GET&amp;#39;: return render_template(&amp;#39;login.html&amp;#39;) elif request.method == &amp;#39;POST&amp;#39;: if len(request.values[&amp;#34;username&amp;#34;]) &amp;gt;= 40: return render_template_string(&amp;#34;Username is too long!&amp;#34;) elif len(request.values[&amp;#34;username&amp;#34;].upper()) &amp;lt;= 50: return render_template_string(&amp;#34;Username is too short!</description>
+    </item>
+    
+    <item>
+      <title>Robots</title>
+      <link>https://0x3eb.github.com/posts/robots/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/robots/</guid>
+      <description>DescriptionLink to headingDang, if only there was some standardized way to tell webcrawlers how to index your site. I guess we have to build our own.
+http://challs.n00bzunit3d.xyz:36083
+SolvingLink to headingWe are redirecing on http://challs.n00bzunit3d.xyz:36083/robots.
+Since we know that web servers store robots.txt, we can do :
+curl http://challs.n00bzunit3d.xyz:36083/robots.txt ResultLink to headingn00bz{1_f0und_7h3_r0b0ts!} </description>
+    </item>
+    
+    <item>
+      <title>Secret Group</title>
+      <link>https://0x3eb.github.com/posts/secret-group/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/secret-group/</guid>
+      <description>DescriptionLink to headingTo get the flag, you must be a member of the secret group!
+http://challs.n00bzunit3d.xyz:31401/
+SolvingLink to headingWhen you go on the website, it says &amp;ldquo;Not an agent of the n00bz-4dm1n secure browser!&amp;rdquo;.
+So using a tool like burpsuite, change your User-Agent to n00bz-4dm1n. Upon visiting the website again, it says &amp;ldquo;Does not Accept fl4g&amp;rdquo;.
+So change your Accept to fl4g. Upon visiting the website again, it says &amp;ldquo;Connection not s3cur3&amp;rdquo;.</description>
+    </item>
+    
+  </channel>
+</rss>

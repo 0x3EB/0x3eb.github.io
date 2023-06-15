@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OSINT on 0x3EB</title>
+    <link>https://0x3eb.github.com/tags/osint/</link>
+    <description>Recent content in OSINT on 0x3EB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://0x3eb.github.com/tags/osint/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Damn</title>
+      <link>https://0x3eb.github.com/posts/damn/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/damn/</guid>
+      <description>DescriptionLink to headingDamn bro, Dam! &amp;ndash; Note: Find out the city that this dam is in. Flag format is n00bz{City_Name}
+SolvingLink to headingSearching on google images, clicking on &amp;ldquo;Find Image Source&amp;rdquo;. Going on the first link(https://www.axios.com/2023/06/06/un-ukraine-russia-dam-collapse-monumental-catastrophe), you can see under the caption it says &amp;ldquo;Kakhovka dam&amp;rdquo;. Searching up that on wiki, scrolling down, on the right hand side you can see that it is in &amp;ldquo;Nova Kakhovka&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Lost</title>
+      <link>https://0x3eb.github.com/posts/lost/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/lost/</guid>
+      <description>DescriptionLink to headingI got lost. Help me find out where I am. Flag format is n00bz{Name_Of_Pin_On_Google_Maps}
+SolvingLink to headingCheck the image meta data to see that the photo was taken in San Francisco. Use google maps and the fact that the photo is in San Francisco to identify the bridge as the Oakland Bay Bridge. At which point you know the photo is in Downtown San Francisco looking east.</description>
+    </item>
+    
+    <item>
+      <title>Mission Moon</title>
+      <link>https://0x3eb.github.com/posts/mission-moon/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/mission-moon/</guid>
+      <description>DescriptionLink to headingA mission, had planned to land on the moon. Can you find where it planned to land on the moon and the name of the lander and rover? Flag is latitude longitude upto one decimal place.
+Flag format - n00bz{Lander_Rover_latitude_longitude} for eg - n00bz{Examplelander_Examplerover_12.3_45.6}. Also note that flag is case sensitive! Due to a quite big range of answers, to narrow down your search, use the latitude and longitude provided from this site: blog.</description>
+    </item>
+    
+    <item>
+      <title>The online odyssey</title>
+      <link>https://0x3eb.github.com/posts/the-online-odyssey/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/the-online-odyssey/</guid>
+      <description>DescriptionLink to headingMy friend blackhat_abhinav gave me a ctf challenge and told me that the challenge is full of mystery and he wanted me to solve the mystery and get the flag. Can you help me to get the flag?
+Flag format:- n00bz{fl4g_h3r3}
+SolvingLink to headingSo it&amp;rsquo;s a very easy challenge. We are given a name i.e brayannoob.
+After checking the Github profiles we found a commit with usernames</description>
+    </item>
+    
+    <item>
+      <title>Try to hack me</title>
+      <link>https://0x3eb.github.com/posts/try-to-hack-me/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/try-to-hack-me/</guid>
+      <description>DescriptionLink to headingMy friend brayannoob gave me a ctf challenge and told me Try to hack me
+SolvingLink to headingSo it&amp;rsquo;s a very easy challenge. We are given a name i.e brayannoob.
+After checking the Github profiles we found a commit with usernames
+We find some username now according to challenge name the username is of Tryhackme so going to https://tryhackme.com/p/brayan234 we can see the flag.</description>
+    </item>
+    
+  </channel>
+</rss>

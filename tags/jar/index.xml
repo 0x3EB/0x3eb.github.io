@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jar on 0x3EB</title>
+    <link>https://0x3eb.github.com/tags/jar/</link>
+    <description>Recent content in Jar on 0x3EB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://0x3eb.github.com/tags/jar/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MyPin</title>
+      <link>https://0x3eb.github.com/posts/mypin/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://0x3eb.github.com/posts/mypin/</guid>
+      <description>DescriptionLink to headingI made a safe with a pin of only two digits.
+Attachement : My-pin.jar
+SolvingLink to headingUsing a online jar decompiler (http://www.javadecompilers.com/), we are able to see all the files used in that Jar and starting to reverse them.
+The class Secret is very interesting because that contains all the process and calculation.
+class Secret { private int cnt; private int[] box; private int[] mydata; private static Secret instance; private Secret() { this.</description>
+    </item>
+    
+  </channel>
+</rss>
